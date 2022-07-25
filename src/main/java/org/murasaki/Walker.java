@@ -25,7 +25,7 @@ public class Walker {
     void walk() throws IOException {
         print();
         while (value != 1) {
-            var next = random.nextInt(value) + 1; // account for 0 included and value excluded
+            int next = random.nextInt(value) + 1;
             if (next == 1) {
                 print();
                 value--;
